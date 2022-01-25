@@ -1,0 +1,58 @@
+@import url("https://webassets.cafebazaar.ir/css/c628ee0.css");
+
+.main {
+  margin: 20px 0;
+  display: inline-flex;
+  justify-content: flex-start;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+  border-bottom: black solid 1px;
+}
+
+.bazaar,
+.myket {
+  text-align: center;
+  margin: 0 20px;
+  min-width: 160px;
+}
+
+.myket {
+  img {
+    width: 128px;
+    height: 128px;
+  }
+  .CoverHeader__title-subtitle {
+    margin: 0;
+  }
+  .btn-primary {
+    background-color: #ff4081;
+  }
+}
+
+.btn-download {
+  background-color: #ff4081;
+  border-radius: 8px;
+  color: #fff;
+  float: left;
+  text-align: center;
+  white-space: nowrap;
+  height: 42px;
+  line-height: 38px;
+  padding: 0 30px;
+  font-size: 1.286rem;
+}
+
+.CoverHeader__content {
+  align-items: center;
+}
+
+span#loadingbtn {
+  display: none;
+}
+
+img {
+  margin-bottom: 1em !important;
+}
