@@ -1,6 +1,6 @@
 {
   "name": "install-apps-directly",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "micro-frontend react app for zarebin that shows apps for installing directly",
   "main": "index.js",
   "author": "Behrad Hajmiri <behradhajmiri@gmail.com>",

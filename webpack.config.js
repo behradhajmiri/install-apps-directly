@@ -73,7 +73,7 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'calendarApp',
+      name: 'installAppsDirectly',
       filename: 'remoteEntry.js',
       exposes: {
         './RemoteApp': './src/App',

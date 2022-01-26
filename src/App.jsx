@@ -1,19 +1,19 @@
 import React from 'react';
-import { Bazaar, Myket } from './components/ShowApps';
+import ShowApps from './components/ShowApps';
 import './App.scss';
-
-import bazaarSources from './sources/bazaar/index';
-import myketSources from './sources/myket/index';
+import sources from './sources/index';
 
 const App = function App() {
   return (
     <div className="main">
-      <Bazaar src={bazaarSources[0]} />
-      <Bazaar src={bazaarSources[1]} />
-      <Bazaar src={bazaarSources[2]} />
-      <Bazaar src={bazaarSources[3]} />
-      <Myket src={myketSources[0]} />
-      <Myket src={myketSources[1]} />
+      {/* give sources[...] to ShowApps as src  */}
+      <ShowApps src={sources[5]} />
+      <ShowApps src={sources[6]} />
+      <ShowApps src={sources[3]} />
+      <ShowApps src={sources[1]} />
+      <ShowApps src={sources[0]} />
+      <ShowApps src={sources[2]} />
+      <ShowApps src={sources[4]} />
     </div>
   );
 };
