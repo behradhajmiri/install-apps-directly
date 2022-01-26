@@ -9,7 +9,7 @@ For using this app please Follow the steps below:
 1. Get `.html` files from websites by command: `wget -E -k 'url'`
 2. Import `.html` files to `index.js` file in the sources folder
 3. Export imported files as samples
-4. Give sources[...] to component as `src`
+4. Give sources to component `ShowApps`
 
 ### How to run
 1. Install requirements: `npm install`
