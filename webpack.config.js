@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { ModuleFederationPlugin } = require('webpack').container;
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   entry: './src/index',
@@ -14,7 +15,7 @@ module.exports = {
   },
 
   output: {
-    publicPath: 'http://localhost:3007/',
+    publicPath: 'http://localhost:3008/',
   },
   resolve: {
     extensions: [
@@ -29,6 +30,11 @@ module.exports = {
       'jpeg',
       'png',
     ],
+  },
+  externals: [nodeExternals()],
+  target: 'node',
+  node: {
+    __dirname: false,
   },
   module: {
     rules: [
@@ -59,6 +65,14 @@ module.exports = {
           loader: 'html-loader',
         },
       },
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+        options: {
+          configFile: 'tsconfig.json',
+        },
+      },
     ],
   },
   devServer: {
@@ -66,14 +80,14 @@ module.exports = {
       directory: path.join(__dirname, 'dist'),
     },
     compress: true,
-    port: 3007,
+    port: 3008,
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'installAppsDirectly',
+      name: 'translateApp',
       filename: 'remoteEntry.js',
       exposes: {
         './RemoteApp': './src/App',

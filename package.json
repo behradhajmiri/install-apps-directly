@@ -1,17 +1,24 @@
 {
-  "name": "install-apps-directly",
-  "version": "0.0.2",
-  "description": "micro-frontend react app for zarebin that shows apps for installing directly",
+  "name": "translate",
+  "version": "0.0.1",
+  "description": "",
   "main": "index.js",
   "author": "Behrad Hajmiri <behradhajmiri@gmail.com>",
   "scripts": {
     "start": "webpack serve",
-    "build": "webpack"
+    "build": "webpack",
+    "test": "nodemon node.js"
   },
   "keywords": [],
   "license": "ISC",
   "dependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "body-parser": "^1.19.2",
     "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.3",
+    "joi": "^17.6.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
@@ -19,6 +26,10 @@
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
+    "@types/cheerio": "^0.22.31",
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.26",
+    "@types/react": "^17.0.39",
     "babel-loader": "^8.2.3",
     "concurrently": "^6.3.0",
     "css-loader": "^6.5.1",
@@ -40,9 +51,12 @@
     "sass": "^1.43.4",
     "sass-loader": "^12.3.0",
     "serve": "^13.0.2",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.5",
     "url-loader": "^4.1.1",
     "webpack": "^5.67.0",
     "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.5.0"
+    "webpack-dev-server": "^4.5.0",
+    "webpack-node-externals": "^3.0.0"
   }
 }

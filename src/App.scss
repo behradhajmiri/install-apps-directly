@@ -1,58 +1,71 @@
-@import url("https://webassets.cafebazaar.ir/css/c628ee0.css");
-
-.main {
-  margin: 20px 0;
-  display: inline-flex;
-  justify-content: flex-start;
+.abadis {
+  margin: 1.6rem;
+  padding-bottom: 20px;
+  border-bottom: solid black 1px;
+  line-height: 2.4rem;
 }
 
-.title {
-  font-size: 1.5rem;
-  margin-bottom: 1em;
-  border-bottom: black solid 1px;
+.result {
+  max-width: 768px;
+  margin: 0;
 }
-
-.bazaar,
-.myket {
-  text-align: center;
-  margin: 0 20px;
-  min-width: 160px;
-}
-
-.myket {
-  img {
-    width: 128px;
-    height: 128px;
-  }
-  .CoverHeader__title-subtitle {
-    margin: 0;
-  }
-  .btn-primary {
-    background-color: #ff4081;
-  }
-}
-
-.btn-download {
-  background-color: #ff4081;
+.translate {
   border-radius: 8px;
-  color: #fff;
-  float: left;
-  text-align: center;
-  white-space: nowrap;
-  height: 42px;
-  line-height: 38px;
-  padding: 0 30px;
-  font-size: 1.286rem;
+  padding: 1.6rem;
+  margin: 1rem 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  text-align: justify;
+}
+.word {
+  padding: 1.6rem 0.5rem 0;
+  font-size: 3.5rem;
+  width: 100%;
+  line-height: 1;
 }
 
-.CoverHeader__content {
-  align-items: center;
+@media screen and (min-width: 555px) {
+  .result {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 10px;
+  }
+  .translate {
+    border-radius: 8px;
+    padding: 1.6rem;
+    margin: 1rem 0;
+    background-color: #f8f9fa;
+    width: auto;
+  }
+  .word {
+    padding: 1.6rem;
+    font-size: 5rem;
+  }
 }
 
-span#loadingbtn {
-  display: none;
+.source {
+  margin: 10px;
 }
 
-img {
-  margin-bottom: 1em !important;
+.boxLtr {
+  h1,
+  #pho {
+    direction: ltr;
+    text-align: left;
+    color: black;
+    height: fit-content;
+  }
+}
+
+.boxLtr h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#pho {
+  font-family:Arial;
+}
+
+#pho .aud {
+  padding-left: 20px;
 }
